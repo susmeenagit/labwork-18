@@ -1,0 +1,10 @@
+include_once: Ensures that the specified file is included only once in the script, 
+even if called multiple times. It is useful for avoiding duplicate inclusions of files 
+that might cause errors (e.g., re-declaring functions or classes).
+
+require_once: Similar to include_once, but it is stricter. If the file is not found, 
+it stops the script execution (throws a fatal error). Use it for files critical to the application.
+
+Use include if the file is optional and the script should continue even if the file is missing.
+Use require if the file is essential and the script must not proceed without it.
+Use include_once or require_once to avoid duplicate loading of critical or optional files.
